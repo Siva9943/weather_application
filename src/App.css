@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, #e0f7fa, #fffde7); 
+}
+
+.box {
+  width: 400px;
+  min-height: 550px;
+  padding: 40px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 4px 1px black;
+  border-radius: 10px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.box .date {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.celcius {
+  font-size: 65px;
+  transition: all 0.3s ease-in-out;
+}
+
+sup {
+  font-size: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-box .i {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.input-box .i:hover {
+  color: #0077b6;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 0 45px 0 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.box1 img {
+  width: 150px;
+  height: 150px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.box2 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box2 img {
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease-in-out;
+}
+
+.loading {
+  text-align: center;
+  font-size: 22px;
+  color: #555;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 450px) {
+  .box {
+    width: 320px;
+    height: fit-content;
+  }
+
+  .box1 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .box1 img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .celcius {
+    font-size: 55px;
+  }
+
+  sup {
+    font-size: 18px;
+  }
+
+  .box2 {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .box2 img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .box {
+    width: 300px;
+    min-height: fit-content;
+  }
+
+  .box1 img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .celcius {
+    font-size: 45px;
+  }
+
+  sup {
+    font-size: 16px;
+  }
+
+  .box2 {
+    font-size: 14px;
+  }
+
+  .box2 img {
+    width: 50px;
+    height: 50px;
+  }
+}
