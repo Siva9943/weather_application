@@ -10,7 +10,7 @@ This app fetches real-time weather data from an external API and displays the cu
 - Displays temperature, humidity, and weather condition 🌡️
 - Uses **OpenWeatherMap API** (or any free weather API)
 - Built with **React + Vite** for fast performance ⚡
-- Responsive and user-friendly UI 📱
+- Responsive and user-friendly UI 📱.
 
 ---
 
